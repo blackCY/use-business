@@ -29,7 +29,6 @@ export const useClickAway = <T = HTMLDivElement>(ref: RefObject<T>, onCloseFn?: 
     return () => {
       document.removeEventListener("click", clickDocument);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onShow = (e: React.MouseEvent) => {

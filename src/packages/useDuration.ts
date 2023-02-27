@@ -22,7 +22,6 @@ export const useDuration = (audioUrl: string, mediaType?: Parameters<typeof getD
       .catch(err => {
         console.log(`获取音频时长失败(${audioUrl})：`, err);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioUrl]);
 
   return durationState;

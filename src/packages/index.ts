@@ -6,3 +6,4 @@ export { useClickAway } from "./useClickAway";
 export { useDuration } from "./useDuration";
 export { useAudioPlayer } from "./useAudioPlayer";
 export { useCollectEvent } from "./useCollectEvent";
+export { useMenuScroll } from "./useMenuScroll";

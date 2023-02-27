@@ -17,7 +17,6 @@ export const useAudioPlayer = (audioUrl: string) => {
     // 如果当前是播放中，设置播放进度
     if (!isPlaying || !isMounted()) return;
     setProgressVal(audioInfo.currentTime || 0);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioInfo.currentTime, isPlaying]);
 
   /** 音频播放控制函数 */
