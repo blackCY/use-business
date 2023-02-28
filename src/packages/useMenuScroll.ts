@@ -38,13 +38,15 @@ export const useMenuScroll = ({ maxSize, defaultIndex, className = "menu-scroll"
       containerRef.current.scrollLeft = menuLeft - menuWidth;
     }
 
-    if (menuRight >= containerRight) {
+    if (menuRight >= containerRight - menuWidth) {
       containerRef.current.scrollLeft = menuRight - containerWidth + menuWidth;
     }
   }, []);
 
   /** 点击 menu item */
   const onClickMenu = (idx: number) => {
+    if (idx === menuSelectedIdx) return;
+
     setMenuSelectedIdx(idx);
     onComputedContainer(idx);
   };
