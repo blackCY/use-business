@@ -8,4 +8,3 @@ export { useAudioPlayer } from "./useAudioPlayer";
 export { useCollectEvent } from "./useCollectEvent";
 export { useMenuScroll } from "./useMenuScroll";
 export { useGroupState } from "./useGroupState";
-export { useRequest } from "./useRequest";
